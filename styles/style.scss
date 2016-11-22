@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+html,body {
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+}
+
+#bookshelf {
+
+  @include clearfix;
+
+  background: transparentize(blue, .9);
+  border: 2px solid black;
+
+  .book {
+
+    &.featured {
+      background: transparentize(yellow, .6);
+    }
+
+    width: 33.33333%;
+    float:left;
+    text-align: center;
+    padding: 40px;
+
+    img {
+      display: block;
+      width: 257px;
+      height: 386px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      margin: 5px;
+      font-weight: 200;
+    }
+
+  }
+
+}
+

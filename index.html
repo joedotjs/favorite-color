@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>jQuery Lecture</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1 id="logo">Color Palette Picker</h1>
+    <div id="sliders">
+        <div>
+            <input type="range" min="0" max="255" value="0" />
+            <span>0</span>
+        </div>
+        <div>
+            <input type="range" min="0" max="255" value="0" />
+            <span>0</span>
+        </div>
+        <div>
+            <input type="range" min="0" max="255" value="0" />
+            <span>0</span>
+        </div>
+        <button id="save-color">Save this color!</button>
+    </div>
+    <div id="my-color" style="background: rgb(0, 0, 0)"></div>
+    <ul id="favorite-colors">
+    </ul>
+</body>
+</html>
